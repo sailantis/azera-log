@@ -28,14 +28,14 @@ use Psr\Log\LogLevel;
  *
  * Register with the framework's `EventDispatcher`:
  *
- * <code>
+ * ```php
  * $dispatcher->listen(JobPushed::class, $listener);
  * $dispatcher->listen(JobReserved::class, $listener);
  * $dispatcher->listen(JobProcessed::class, $listener);
  * $dispatcher->listen(JobReleased::class, $listener);
  * $dispatcher->listen(JobRetried::class, $listener);
  * $dispatcher->listen(JobFailed::class, $listener);
- * </code>
+ * ```
  *
  * All log records include the queue name and job id (when available);
  * processed/retried records include the duration and attempt; failed

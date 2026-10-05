@@ -19,10 +19,10 @@ use Psr\Log\LogLevel;
  *
  * Register with the framework's `EventDispatcher`:
  *
- * <code>
+ * ```php
  * $dispatcher->listen(QueryExecuted::class, $dbQueryLogger);
  * $dispatcher->listen(DatabaseOperationFailed::class, $dbQueryLogger);
- * </code>
+ * ```
  */
 class DbQueryLogger
 {

@@ -16,11 +16,11 @@ use Psr\Log\LogLevel;
  * Logs `debug` for begin/commit and `warning` for rollback, useful for
  * audit trails. Register for the three transaction events:
  *
- * <code>
+ * ```php
  * $dispatcher->listen(TransactionStarted::class, $listener);
  * $dispatcher->listen(TransactionCommitted::class, $listener);
  * $dispatcher->listen(TransactionRolledBack::class, $listener);
- * </code>
+ * ```
  */
 class TransactionAuditListener
 {

@@ -32,7 +32,7 @@ use Psr\Log\LogLevel;
  *
  * Register with the framework's `EventDispatcher`:
  *
- * <code>
+ * ```php
  * $dispatcher->listen(Attempting::class, $listener);
  * $dispatcher->listen(Authenticated::class, $listener);
  * $dispatcher->listen(Login::class, $listener);
@@ -41,7 +41,7 @@ use Psr\Log\LogLevel;
  * $dispatcher->listen(Lockout::class, $listener);
  * $dispatcher->listen(PasswordResetRequested::class, $listener);
  * $dispatcher->listen(Verified::class, $listener);
- * </code>
+ * ```
  *
  * The user id is extracted from the `mixed $user` payload using the same
  * heuristic as `SessionGuard::userId()`: array `['id']`, object
